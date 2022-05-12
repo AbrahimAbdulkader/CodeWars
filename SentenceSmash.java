@@ -2,14 +2,10 @@ package FundamentalQuestions;
 
 public class SentenceSmash {
 
-    public static String smash(String [] words) {
-        StringBuilder result = new StringBuilder();
-
-        for(int i = 0; i < words.length; i++) {
-            result.append(words[i]).append(" ");
+        public static String smash(String [] words) {
+            return String.join(" ", words);
         }
-        return result.toString();
-    }
+
 
     /*
     1. StringBuilder
