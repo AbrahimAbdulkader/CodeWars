@@ -1,0 +1,3 @@
+# CodeWars
+
+Practicing Java Fundamentals
