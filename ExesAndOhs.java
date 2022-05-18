@@ -23,13 +23,13 @@ XO("zzoo") => false
             if (c == 'x' || c == 'X') {
                 numOfXs++;
             } else if (c == 'o' || c == 'O') {
-                 numOfXs++;
+                 numOfOs++;
             }
         }
         return numOfXs == numOfOs;
     }
 
     public static void main(String[] args) {
-        System.out.println(getXO("zpzpzpp"));
+        System.out.println(getXO("ooxx"));
     }
 }
