@@ -26,15 +26,17 @@ public class isSquare {
         26  =>  false
      */
 
-    public static boolean isSquare(int n) {
-        double result = Math.sqrt(n);  //Find the square root of n and store it in double result
-        if(n % result == 0) { //Check if n % result is equal to 0 (has no remainder)
+    public static boolean isItSquare(double num) {
+        double result = Math.sqrt(num); //25 = 5    //26 = decimal num
+        if(Math.floor(result) == result) {
             return true;
         }
         return false;
     }
 
     public static void main(String[] args) {
-        System.out.println(isSquare(4));
+        System.out.println(isItSquare(3));
     }
+
+
 }
