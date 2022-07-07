@@ -19,7 +19,7 @@ public class SmallEnough {
     }
 
     public static void main(String[] args) {
-        int[] arr = {23, 35, 54};
-        System.out.println(smallEnough(arr, 111));
+        int[] arr = {101, 45, 75, 105, 99, 107};
+        System.out.println(smallEnough(arr, 107));
     }
 }
