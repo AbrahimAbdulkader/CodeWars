@@ -31,16 +31,16 @@ With list [20,37,20,21] and number 1, the result would be [20,37,21].
         //map = [20, 37, ]
 
 
-        HashSet<Integer> map = new HashSet<>();
+        HashMap<Integer, Integer> map = new HashMap<>();
         int [] array = new int[maxOccurrences * 3];
         for(int i = 0; i < elements.length; i++) {
-            if(map.contains(array[i])) {
+            if(map.containsValue(array[i])) {
                 continue;
             }
             else  {
                 array[i] = elements[i];
             }
-            map.add(i);
+            map.put(i, array[i]);
         }
 
         return array;
